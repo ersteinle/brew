@@ -202,20 +202,19 @@ a {
 #bodyTitle {
     background-color: #f1f946;
     /* background-color: antiquewhite; */
-    padding-top: 120px;
+    //padding-top: 120px;
     border-top: #2d2d2d solid 2px;
     border-bottom: #2d2d2d solid 5px;
     background-image: url(img/bubbles.png);
     position: relative;
+    //height: 250px;
 }
 
 #bodyTitleContentWrap {
     width: 700px;
     margin: 0px auto;
-    height: 150px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    height: 250px;
+
 }
 
 #bodyTitle h3 {
@@ -224,13 +223,20 @@ a {
     padding-bottom: 50px;
     display: inlinle;
     margin: 0px auto;
+    padding-top: 50px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-#bodyTitle img {
+.body-title-img-wrap {
     display: inline;
     float: left;
     margin: 0px;
     margin-right:30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #underMainContent {
