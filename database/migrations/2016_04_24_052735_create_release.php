@@ -12,7 +12,7 @@ class CreateRelease extends Migration
      */
     public function up()
     {
-        Schema::create('events', function (Blueprint $table) {
+        Schema::create('releases', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('brewery');

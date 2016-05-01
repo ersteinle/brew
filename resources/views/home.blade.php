@@ -8,10 +8,10 @@
 
 
 <div class="imgBox">
-    <img src="/img/box1.jpg" height="200px" width="200px;" />
-    <img src="/img/box3.jpg" height="200px" width="200px;" /><br />
-    <img src="/img/box4.jpg" height="200px" width="200px;" />
-    <img src="/img/box5.jpg" height="200px" width="200px;" />
+    <img src="img/box1.jpg" height="200px" width="200px;" />
+    <img src="img/box3.jpg" height="200px" width="200px;" /><br />
+    <img src="img/box4.jpg" height="200px" width="200px;" />
+    <img src="img/box5.jpg" height="200px" width="200px;" />
 </div>
 <div class="definition-wrap" >
     <h3><b>brew - re - gion </b> </h3> (bro?o r?j?n)
@@ -30,11 +30,11 @@
         <p>1. &nbsp;&nbsp; To explore beer</p>
     </div>
    
-    
- <br /><br /><br />
- <h4>If you want to find brewery related events, and keep up to date on beer related 
- news in NW Indiana, then you've come to the right place. Brew Region will host a collaborative effort, aimed at providing up to date information about our local micro breweries</h4>
-
+ <div class="home-end-desc">
+    <br /><br /><br />
+    <h4>If you want to find brewery related events, and keep up to date on beer related 
+    news in NW Indiana, then you've come to the right place. Brew Region will host a collaborative effort, aimed at providing up to date information about our local micro breweries</h4>
+ </div>
  <br /><br /><h3>Now lets try some beer!</h3>
 
 </div>

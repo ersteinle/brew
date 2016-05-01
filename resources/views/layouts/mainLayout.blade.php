@@ -16,6 +16,7 @@
     </head>
     <body>
         <div class="header">
+            <div class="header-wrap">
             <span class='login-head' style='margin-right: 40px;'>
                     @if (Auth::guest())
                         <a href="{{ url('/login') }}">Login</a><br />
@@ -60,6 +61,7 @@
                 
                 <!--Auth control-->
                 
+            </div>
             </div>
             
         </div>
