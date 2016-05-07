@@ -7,7 +7,7 @@
 @section('content')
 <br />
 <br />
-<form id='newEventForm' action="/addEvent" method='POST'>
+<form id='newEventForm' action="/addEvent" enctype="multipart/form-data" method='POST'>
     Title<br />
     <input type='text' size="40" name="title">
     <br /><br />
@@ -22,7 +22,7 @@
     <input type="text" size="40" name="link">
     <br /><br />
     Image<br />
-    <input type='text'  size="40" name="img"/>
+    <input type='file' name="img" accept="image/*"/>
     <br /><br />
     Auth Check 
     <input type="text" name="authCheck"/>

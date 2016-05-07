@@ -30,7 +30,7 @@
 </form>
 <br />
 
-<form id='EditEventForm' action="/editEvent" method='POST' >
+<form id='EditEventForm' action="/editEvent" enctype="multipart/form-data" method='POST' >
     Title<br />
     <input type='text' size="40" name="title" value="{{ Event::find($id)->title }}" />
     <br /><br />
@@ -45,7 +45,8 @@
     <input type="text" size="40" name="link" value="{{ Event::find($id)->link }}" />
     <br /><br />
     Image<br />
-    <input type='text'  size="40" name="img" value="{{ Event::find($id)->descImg }}"/>
+    <input type='file'  name="img" />
+    <?php echo '<img src="data:image/jpeg;base64,'.base64_encode((App\EventsImg::find(Event::find($id)->img)->img)).'" height="250px"/>'; ?>
     <br /><br />
     Auth Check 
     <input type="text" name="authCheck" value="{{ Event::find($id)->authCheck }}"/>

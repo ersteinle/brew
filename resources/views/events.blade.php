@@ -1,4 +1,4 @@
-<?php $month2 = ""; ?>
+<?php $month2 = ""; use App\EventsImg;?>
 
 @extends('layouts.mainLayout')
 
@@ -45,7 +45,9 @@
     <div class="event-item">
         <div class="event-bubble">
             <div class="event-img-wrap">
-                <img src="{{ "/img/" . $event['descImg'] }}" height="250px" />
+                <?php //Display image from event_imgs table, using img field from events table
+                    echo '<img src="data:image/jpeg;base64,'.base64_encode((EventsImg::find($event['img'])->img)).'" height="250px"/>';
+                ?>
             </div>
             <div class="event-bubble-detail">
                 <div class="event-date2">
@@ -54,7 +56,6 @@
                     <!--Toggle Edit-->
                     <?php
                         if($toggleEdit || (!(Auth::guest()) && $event['uploaderID'] == Auth::user()->id)) {
-                            //echo '<br /><a href="/editEvent/40">Edit</a>';
                             echo 
                             '<form action="editEvent" method="POST">'
                                 . '<input type="hidden" name="id" value="'.$event['id'].'" />'
